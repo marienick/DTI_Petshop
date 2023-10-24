@@ -13,13 +13,13 @@ Algumas decisões de projeto importantes incluem:
 - Possuir um ambiente de desenvolvimento C#  configurado na sua máquina;
 ## Executando o Programa:
 - Clone este repositório para sua máquina local:
-  git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/seu-usuario/seu-repositorio.git
 - Navegue até o diretório do programa:
-  cd seu-repositorio
+ cd seu-repositorio
 - Compile o programa:
-  csc Program.cs
+csc Program.cs
 - Execute o Programa:
-  mono Program.exe
+mono Program.exe
 - O programa pedirá para que você insira a data desejada para o banho (dia/mês/ano) e a quantidade de cães pequenos e grandes que você deseja dar banho.
 - Depos de inserir esses dados o programa vai retornar qual é o petshop mais acessível e informará o preço total de acordo com os dados inseridos.
   
