@@ -1,8 +1,4 @@
 # Programa para Comparação de Preços de Petshops.
-## Tabela de conteúdos do README:
-- [Premissas Assumidas](##prememissas-assumidas)
-- [Decisões do Projeto](##decisões-do-projeto)
-- [Instruções Para Executar o Projeto](##instruções-para-executar-o-projeto)
 ## Premissas assumidas:
 **1-Variação nos valores dos banhos:** Todos os três petshops oferecem valores distintos para os seus serviços.
 **2-Acréscimo nos preços:** Nos petshops "Meu Canino Feliz" e "Vai Rex" há um acrescimo no valor habitual dos banhos nos fins de semana, por exemplo: nos fins de semana o banho no Meu Canino Feliz tem um aumento de 20%.
