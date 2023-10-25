@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Model;
 using Controllers;
 
@@ -20,11 +20,10 @@ class Program
         ano = int.Parse(array2[0]);
         qtdPequeno = int.Parse(array2[1]);
         qtdGrande = int.Parse(array2[2]);
-        //esse Controller antes das funções significa que essas funções pertencem a classe Controller
+        //esse controller antes das funções significa que essas funções pertencem a classe Controller
         bool data = Controller.diaDaSemana(ano, mes, dia);
-        //Já esse controller na frente da função melhorPetshop e na frente do vetor petshops é para que as informacões de petshops sejam "iniciadas" no contexto atual
         string melhorLugar = controller.melhorPetshop(controller.petshops, data, qtdPequeno, qtdGrande, out preco);
-        Console.WriteLine(melhorLugar + " " + preco);
+        Console.WriteLine("\nO melhor Petshop para estas condições é "+ melhorLugar + " no valor total de: R$" + preco.ToString("0.00"));
 
     }
 }
