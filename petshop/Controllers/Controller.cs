@@ -1,6 +1,7 @@
 using Model;
 namespace Controllers
 {
+    //classe controller
     public partial class Controller
     {
         public Petshop[] petshops;
@@ -9,13 +10,13 @@ namespace Controllers
         public Controller()
         {
             this.petshops = new Petshop[3];
-            this.petshops[0] = new Petshop("Meu Canino Feliz", 2.0m, 48.0M, 24.0M, 20.0M, 40.0M);
-            this.petshops[1] = new Petshop("Vai Rex", 1.7m, 55.0M, 20.0M, 15.0M, 50.0M);
-            this.petshops[2] = new Petshop("ChowChawgas", 0.8m, 45.0M, 30.0M, 30.0M, 45.0M);
+            this.petshops[0] = new Petshop("Meu Canino Feliz", 2.0M, 48.0M, 24.0M, 20.0M, 40.0M);
+            this.petshops[1] = new Petshop("Vai Rex", 1.7M, 55.0M, 20.0M, 15.0M, 50.0M);
+            this.petshops[2] = new Petshop("ChowChawgas", 0.8M, 45.0M, 30.0M, 30.0M, 45.0M);
         }
         
         //função para achar o petshop mais acessível
-        public static string melhorPetshop(Petshop[] petshops, bool data, int qtdPequeno, int qtdGrande, out decimal preco)
+        public  string melhorPetshop(Petshop[] petshops, bool data, int qtdPequeno, int qtdGrande, out decimal preco)
         {
             Petshop melhorOpcao = petshops[0];
             for (int i = 1; i < petshops.Length; i++)
