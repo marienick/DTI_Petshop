@@ -1,22 +1,42 @@
 namespace Model
 {
-
+    //classe petshops com os atributos
     public partial class Petshop
     {
-        public decimal Distancia { get; set; }
-        public decimal ValorPequeno { get; set; }
-        public decimal ValorGrande { get; set; }
-        public decimal ValorPequenoFimSemana { get; set; }
-        public decimal ValorGrandeFimSemana { get; set; }
-        public string Nome { get; set; }
+        //{get; set} recomendaddo para pessoa nao acessar diretamente o atributo.
+        public decimal distancia { get; set; }
+        public decimal valorCachorroPequeno { get; set; }
+        public decimal valorCachorroGrande { get; set; }
+        public decimal valorPequenoFimSemana { get; set; }
+        public decimal valorGrandeFimSemana { get; set; }
+        public string nome { get; set; }
+        
+
+        //contrutor com argumentos necessários para que um novo objeto/petshop seja inicializado
         public Petshop(string petshop, decimal km, decimal valorGrandeFinalSemana, decimal valorPequenoFinalsemana, decimal valorPequeno, decimal valorGrande)
         {
-            Distancia = km;
-            Nome = petshop;
-            ValorGrande = valorGrande;
-            ValorPequeno = valorPequeno;
-            ValorPequenoFimSemana = valorPequenoFinalsemana;
-            ValorGrandeFimSemana = valorGrandeFinalSemana;
+            distancia = km;
+            nome = petshop;
+            valorCachorroGrande = valorGrande;
+            valorCachorroPequeno = valorPequeno;
+            valorPequenoFimSemana = valorPequenoFinalsemana;
+            valorGrandeFimSemana = valorGrandeFinalSemana;
+        }
+
+        //função que vai calcular o preço dos petshops
+        public decimal calcularValor(bool data,int qtdPequeno, int qtdGrande)
+        {
+            decimal valorFinal = 0;
+            if (data)
+            {
+                valorFinal = (this.valorCachorroGrande * qtdGrande) + (this.valorCachorroPequeno * qtdPequeno);
+                return valorFinal;
+            }
+            else
+            {
+                valorFinal = (this.valorGrandeFimSemana * qtdGrande) + (this.valorPequenoFimSemana * qtdPequeno);
+                return valorFinal;
+            }
         }
 
     }
