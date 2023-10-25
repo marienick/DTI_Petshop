@@ -3,7 +3,7 @@ namespace Model
     //classe petshops com os atributos
     public partial class Petshop
     {
-        //{get; set} recomendaddo para pessoa nao acessar diretamente o atributo.
+        //{get; set} recomendaddo para pessoa nao acessar diretamente o atributo sem usar uma função que alteraria ele
         public decimal distancia { get; set; }
         public decimal valorCachorroPequeno { get; set; }
         public decimal valorCachorroGrande { get; set; }
@@ -23,7 +23,7 @@ namespace Model
             valorGrandeFimSemana = valorGrandeFinalSemana;
         }
 
-        //função que vai calcular o preço dos petshops
+        //função que vai calcular o preço total dos petshops
         public decimal calcularValor(bool data,int qtdPequeno, int qtdGrande)
         {
             decimal valorFinal = 0;
