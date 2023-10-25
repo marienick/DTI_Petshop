@@ -6,14 +6,14 @@
 ## Decisões do Projeto:
 Algumas decisões de projeto importantes incluem:
 1. Utilização da linguagem C# ( Console Application no .Net versão 7) para o desenvolvimento deste programa, por causa da familiaridade com a mesma;
-2. Criação da Classe Petshop com os atributos necessários para se calcular o valor do banho, além de utilizar um array para armazenar os 3 petshops fixos que foram pedidos no enunciado do teste;
-3. Estruturação do programa em classes distintas (Petshop, Controller e Program) para tornar o código mais organizado e legível.
+2. Criação da Classe Petshop com os atributos necessários para se calcular o valor do banho, além de utilizar um array para armazenar os 3 petshops fixos que foram pedidos no enunciado do teste, pois presumi que não iriam inserir mais petshops no programa.
+3. Estruturação do programa em pastas distintas (Petshop, Controller e Program) para tornar o código mais organizado e legível.
 ## Instruções para executar o sistema:
 ### Pré requisitos:
 - Possuir um ambiente de desenvolvimento C#  configurado na sua máquina;
 ### Executando o Programa:
 - Clone este repositório para sua máquina local:
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone git@github.com:marienick/DTI_Petshop.git
 - Navegue até o diretório do programa:
 cd seu-repositorio
 - Compile o programa:
